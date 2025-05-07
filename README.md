@@ -54,18 +54,17 @@ A complete mobile application designed for dog owners to discover, learn, and sh
 ## 📂 Folder Structure
 
 BarkBite/
-│
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/             # Kotlin source code
-│   │   │   ├── res/              # UI layouts, drawables, strings
-│   │   │   ├── AndroidManifest.xml
-│   └── build.gradle
-│
-├── .gitignore
-├── build.gradle (Project level)
-├── README.md
+- app/
+-- src/
+--- main/
+---- java/             # Kotlin source code
+---- res/              # UI layouts, drawables, strings
+---- AndroidManifest.xml
+-- build.gradle
+
+- .gitignore
+- build.gradle (Project level)
+- README.md
 
 ---
 
