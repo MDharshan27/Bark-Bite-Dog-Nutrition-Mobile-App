@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recommended_recycler_view" type="id" />
+    <item name="service_image" type="id" />
+    <item name="service_name" type="id" />
+    <item name="service_provider" type="id" />
+    <item name="service_rating" type="id" />
+    <item name="service_price" type="id" />
+    <item name="image_doctor" type="id" />
+    <item name="text_vet_name" type="id" />
+    <item name="text_vet_clinic" type="id" />
+    <item name="text_vet_distance" type="id" />
+    <item name="text_vet_fee" type="id" />
+    <item name="button_add" type="id" />
+    <item name="article_title1" type="id" />
+    <item name="article_summary1" type="id" />
+    <item name="article_title2" type="id" />
+    <item name="article_summary2" type="id" />
+    <item name="article_title3" type="id" />
+    <item name="article_summary3" type="id" />
+    <item name="article_title4" type="id" />
+    <item name="article_summary4" type="id" />
+    <item name="cartFoodImage" type="id" />
+    <item name="cartFoodName" type="id" />
+    <item name="cartFoodPrice" type="id" />
+    <item name="payment_method_group" type="id" />
+    <item name="rb_cash_on_delivery" type="id" />
+    <item name="rb_card_payment" type="id" />
+    <item name="card_payment_form" type="id" />
+    <item name="cardholder_name" type="id" />
+    <item name="card_number" type="id" />
+    <item name="expiration_date" type="id" />
+    <item name="cvv" type="id" />
+    <item name="btn_checkout" type="id" />
+</resources>

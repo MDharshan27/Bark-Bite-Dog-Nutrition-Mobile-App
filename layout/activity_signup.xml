@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/large_background_image" /> <!-- Replace with your background image -->
+
+    <!-- Black Overlay with Opacity -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" /> <!-- Black with 50% opacity -->
+
+    <!-- Heading at the Top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top"
+        android:padding="16dp">
+
+        <!-- Welcome Heading -->
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to BarkBite!"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <!-- Please Sign Up Text -->
+        <TextView
+            android:id="@+id/tvSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Create your Account..."
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Signup Form Layout at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Phone Number Input -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Confirm Password Input -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

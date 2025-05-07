@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with back button and search icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/search" />
+        </LinearLayout>
+
+        <!-- Image Section with background color and circular shape, centered -->
+
+        <!-- Basic Details Section -->
+
+        <!-- Description Section -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/dog_image"
+                android:layout_width="337dp"
+                android:layout_height="298dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dog_image_3" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="296dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Shih Tzu"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <!-- More Details Section -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Shih Tzus require a well-balanced diet to maintain a healthy weight and support their energetic lifestyle. They benefit from high-quality protein, healthy fats, and essential nutrients."
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sample Breakdown for a 12lb Shih Tzu (400 calories/day)"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#D1C4E9"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Protein:\nFat:\nFiber:\nWater:\n\nTreats:"
+                android:textColor="#FF018786"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="25% (about 100g of protein)\n15% (about 60g of fat)\n3% (about 12g of fiber)\n20oz/day (0.5oz per pound of body weight)\nMax 30 calories/day"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!-- Nutrition Details Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:padding="16dp"
+            android:text="By following these guidelines, your Shih Tzu will receive a well-rounded diet tailored to their energy needs and size. Make adjustments based on their activity level and consult your vet to ensure optimal health."
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</ScrollView>

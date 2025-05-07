@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/rounded_background"
+    android:elevation="2dp"
+    android:layout_margin="8dp">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_product_1" />
+
+    <!-- Product Details Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog Collar"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/text_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durable and comfortable"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹300"
+            android:textColor="#FF6200EE"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/button_background"
+        android:text="ADD"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with back button and search icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Medicine"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/search" />
+        </LinearLayout>
+
+        <!-- Promo Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFA726"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consult a Doctor"
+                    android:textColor="#FFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Consult in 10 minutes"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Image on the right side -->
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_doctor" />
+        </LinearLayout>
+
+        <!-- Promo Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="16dp"
+            android:background="#42A5F5"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Medicines"
+                    android:textColor="#FFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Get 100% Genuine Medicines"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <!-- Image on the right side -->
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="111dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_medicine1" />
+        </LinearLayout>
+
+        <!-- Nearby Veterinary Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Veterinary"
+                android:textSize="20sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="120dp"
+                android:text="View All"
+                android:textColor="#FF9800"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- RecyclerView for listing vets -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_vets"
+            android:layout_width="match_parent"
+            android:layout_height="760dp"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+    </LinearLayout>
+</ScrollView>
+

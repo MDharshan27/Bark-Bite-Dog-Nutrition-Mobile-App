@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FF018786"
+    android:gravity="center">
+
+    <!-- Confirmation Icon -->
+    <ImageView
+        android:id="@+id/iv_confirmation_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_checkmark"
+        android:layout_gravity="center"
+        android:contentDescription="Confirmation Icon"
+        android:padding="16dp" />
+
+    <!-- Main Confirmation Message -->
+    <TextView
+        android:id="@+id/tv_confirmation_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Confirmed"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Supporting Message -->
+    <TextView
+        android:id="@+id/tv_confirmation_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your order. You will receive email confirmation shortly.\n\nCheck the status of your order on the Order tracking page."
+        android:textSize="14sp"
+        android:textColor="#CACACA"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="4dp" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/button_confirm_oval"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

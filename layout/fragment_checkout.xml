@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Header with back button and search icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Checkout"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/search"
+                android:contentDescription="Search" />
+        </LinearLayout>
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#000"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textSize="14sp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#000"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textSize="14sp" />
+
+        <!-- Address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#000"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street Address"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textSize="14sp" />
+
+        <!-- Province -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Province"
+            android:textColor="#000"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/province_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Province"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textSize="14sp" />
+
+        <!-- District -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:textColor="#000"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/district_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select District"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textSize="14sp" />
+
+
+        <!-- Mobile Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="#000"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:id="@+id/mobile_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your mobile number"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:textSize="14sp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Payment"
+            android:background="@drawable/button_background"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Plain White Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

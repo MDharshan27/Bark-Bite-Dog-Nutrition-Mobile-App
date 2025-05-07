@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bark Bite</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="welcome_message">Welcome to the main page!</string>
+    <string name="logout">Logout</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="signup_successful">Signup successful</string>
+    <string name="signup_failed">Signup failed</string>
+    <string name="enter_credentials">Please enter username and password</string>
+    <string name="profile_image_desc" />
+    <string name="phone_icon_desc" />
+    <string name="email_icon_desc" />
+    <string name="website_icon_desc" />
+</resources>
